@@ -1,0 +1,9 @@
+services:
+    app.resolver.books:
+        class: AppBundle\Resolver\BooksResolver
+        arguments:
+            - '@doctrine.orm.entity_manager'
+    app.resolver.authors:
+        class: AppBundle\Resolver\AuthorsResolver
+        arguments:
+            - '@doctrine.orm.entity_manager'

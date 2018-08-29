@@ -1,0 +1,17 @@
+Query:
+    type: object
+    config:
+        description: "Queries"
+        fields:
+            book:
+                type: "Book"
+                args:
+                    id:
+                        type: "Int!"
+                resolve: "@=service('app.resolver.books').findOne(args)"
+            author:
+                type: "Author"
+                args:
+                    id:
+                        type: "Int!"
+                resolve: "@=service('app.resolver.authors').findOne(args)"

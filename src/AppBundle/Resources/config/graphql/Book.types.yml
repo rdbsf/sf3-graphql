@@ -1,0 +1,22 @@
+Book:
+    type: object
+    config:
+        description: "This is a book"
+        fields:
+            id:
+                type: "Int!"
+                description: "The id of the book."
+                # to deprecate a field, only set the deprecation reason
+                #deprecationReason: "A terrible reason"
+            title:
+                type: "String!"
+                description: "The title of the book."
+            description:
+                type: "String!"
+                description: "the description of the book."
+            pages:
+                type: "Int!"
+                description: "the number of pages in the book."
+            authors:
+                type: "[Author]"
+                description: "Book authors"
