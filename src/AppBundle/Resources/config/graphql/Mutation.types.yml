@@ -1,0 +1,12 @@
+Mutation:
+    type: object
+    config:
+        fields:
+            authorAdd:
+                type: "Author"
+                args:
+                    name:
+                        type: "String"
+                    bio:
+                        type: "String"
+                resolve: "@=service('app.resolver.authors').register(args)"

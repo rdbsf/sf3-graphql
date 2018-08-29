@@ -40,3 +40,15 @@ Example query
   }
 }
 ```
+
+Example mutation
+
+```
+mutation {
+  authorAdd(
+    name: "Ernest Cline", 
+    bio: "Something about Ernest") {
+      id, name
+    }
+}
+```

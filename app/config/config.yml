@@ -75,7 +75,8 @@ overblog_graphql:
     definitions:
         show_debug_info: false
         schema:
-            query: Query          
+            query: Query      
+            mutation: Mutation
 
 nelmio_cors:
     defaults:

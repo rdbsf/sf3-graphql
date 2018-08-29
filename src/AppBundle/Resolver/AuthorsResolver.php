@@ -32,8 +32,10 @@ class AuthorsResolver extends EmAwareResolver
      public function register($args)
     {
         $name = $args['name'];
+        $bio = $args['bio'];
         $author = new Author;
         $author->setName($name);
+        $author->setBio($bio);
         $this->em->persist($author);
         $this->em->flush();
         return $author;
